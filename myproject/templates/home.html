@@ -3,7 +3,7 @@
 <div class="jumbotron">
   {% if current_user.is_authenticated %}
     <p>Hi {{ current_user.username }}!</p>
-    <p>{{current_user.password_hash}}</p>
+    <p>Your Hashed Password is : {{current_user.password_hash}}</p>
   {% else %}
     <p>Please login or register!</p>
   {% endif %}
