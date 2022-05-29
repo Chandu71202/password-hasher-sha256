@@ -14,6 +14,7 @@ def home():
 @app.route('/welcome')
 @login_required
 def welcome_user():
+    flash("Hi hello")
     return render_template('welcome_user.html')
 
 @app.route('/logout')
