@@ -4,7 +4,7 @@
 <div class="jumbotron">
 <form method="POST">
    
-
+    {% block title %}<h2 style="text-align: center;">Register</h2>{% endblock %}<br><br>
     {# This hidden_tag is a CSRF security feature. #}
     {{ form.hidden_tag() }}
     {{ form.email.label(class="form-label") }} {{ form.email(class="form-control") }}<br>
